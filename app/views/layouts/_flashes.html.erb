@@ -1,0 +1,8 @@
+<% flashes = {notice: 'success', alert: 'standard', error: 'alert', secondary: 'secondary'} %>
+
+<div id="alert-box">
+  <% flash.each do |key, value| %>
+      <div class="alert-box <%= flashes[key] %>"><%= value %></div>
+  <% end %>
+</div>
+

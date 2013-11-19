@@ -1,0 +1,9 @@
+<h1>Feature sliders with <%= link_to 'arturo', 'https://github.com/jamesarosen/arturo' %></h1>
+
+<% if_feature_enabled(:welcome_message) do %>
+Hello there! You've been given access to the welcome_message feature.
+<% end %>
+
+<% if_feature_enabled(:honey_delivery) do %>
+  <%= link_to 'Get honey delivered at home!', honey_delivery_index_path %>
+<% end %>
